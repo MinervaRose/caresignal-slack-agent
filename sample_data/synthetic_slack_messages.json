@@ -1,0 +1,10 @@
+[
+  {"ts": "1", "thread_id": "t1", "user": "Ana", "text": "Hi, I'm stuck on the API auth step. I keep getting an invalid token error. Can someone help?"},
+  {"ts": "2", "thread_id": "t2", "user": "Lina", "text": "Where is the starter notebook? I can't find the right link."},
+  {"ts": "3", "thread_id": "t3", "user": "Marc", "text": "I fixed my install issue by reinstalling the package."},
+  {"ts": "4", "thread_id": "t4", "user": "Sam", "text": "I am overwhelmed by the 200 messages. I don't know what I actually need to read and I might quit for today."},
+  {"ts": "5", "thread_id": "t4", "user": "Maya", "text": "Try starting with the README, then the auth checklist. You do not need to read every thread."},
+  {"ts": "6", "thread_id": "t5", "user": "Mei", "text": "I suggested a small checklist for setup errors above, maybe we could pin it?"},
+  {"ts": "7", "thread_id": "t6", "user": "Owen", "text": "Can someone explain whether we submit the demo URL or the GitHub repo?"},
+  {"ts": "8", "thread_id": "t6", "user": "Nora", "text": "Good question, I will post a clear submission checklist tomorrow."}
+]

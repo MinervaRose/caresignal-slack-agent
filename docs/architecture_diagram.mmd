@@ -1,0 +1,20 @@
+flowchart LR
+    A["Slack workspace<br/>/caresignal brief<br/>/caresignal live<br/>@CareSignal rts brief"] --> B["Slack Bolt app<br/>Socket Mode"]
+
+    B --> C{"Context retrieval layer"}
+
+    C --> D["Demo context<br/>synthetic support-channel messages"]
+    C --> E["Slack Web API<br/>conversations.history"]
+    C --> F["Real-Time Search API<br/>assistant.search.context<br/>via app-mention action_token"]
+
+    D --> G["Message normalization"]
+    E --> G
+    F --> G
+
+    G --> H["CareSignal signal engine<br/>buried questions · blockers<br/>overload · follow-up gaps<br/>quiet voices"]
+
+    H --> I["Block Kit Care Brief<br/>priority summary<br/>evidence · suggested action"]
+
+    I --> J["Human review buttons<br/>Resolved · Assign follow-up · Needs context"]
+
+    J --> K["Slack response<br/>AI surfaces signals<br/>humans decide"]
