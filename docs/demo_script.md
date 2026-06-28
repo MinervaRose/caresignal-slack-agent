@@ -1,63 +1,123 @@
-# CareSignal Demo Video Script — under 3 minutes
+# CareSignal Demo Video Notes
 
-## 0:00–0:20 — Problem
+This file documents the final CareSignal demo video submitted with the project.
 
-Busy Slack learning communities often reward the loudest and fastest participants. The people who need help can be the least visible: someone stuck, someone overwhelmed, someone whose useful suggestion gets buried.
+## Video goal
 
-CareSignal helps moderators turn noisy Slack conversations into a short, human-reviewable care brief.
+The demo video is designed to show CareSignal functioning inside a Slack developer sandbox in under three minutes.
 
-## 0:20–1:00 — Demo scenario
+It demonstrates:
 
-In the Slack sandbox, open `#general` or a demo channel where CareSignal has been added.
+* the problem CareSignal addresses;
+* the Slack commands and app interaction;
+* Care Brief generation;
+* human-review actions;
+* live Slack channel history retrieval;
+* Real-Time Search context retrieval through `assistant.search.context`.
 
-Run:
+## Final video structure
+
+### 0:00–0:15 — Problem
+
+The video introduces the problem: busy Slack communities can move too quickly for moderators, mentors, and community leads to notice every support need.
+
+CareSignal is framed as a tool that helps humans notice buried questions, unresolved blockers, overload signals, follow-up gaps, and overlooked contributions.
+
+### 0:15–0:45 — Demo scenario
+
+The video shows CareSignal running in a Slack developer sandbox.
+
+Command shown:
 
 ```text
 /caresignal demo
 ```
 
-Explain that the app posts synthetic demo messages only, so no real participant data is used.
+This posts a synthetic support-channel scenario. The demo uses synthetic data only, so no real participant data is exposed.
 
-## 1:00–1:45 — Working live analysis
+### 0:45–1:25 — Care Brief
 
-Run:
+The video shows CareSignal generating a Care Brief.
+
+Command shown:
+
+```text
+/caresignal brief
+```
+
+The Care Brief surfaces support signals such as:
+
+* overload signal;
+* unresolved blocker;
+* follow-up gap;
+* quiet or overlooked contribution.
+
+The brief is shown inside Slack using Block Kit.
+
+### 1:25–1:50 — Human review actions
+
+The video shows the human-review buttons in action.
+
+Actions shown include:
+
+```text
+Assign follow-up
+Needs context
+```
+
+This demonstrates the core design principle:
+
+```text
+AI surfaces signals. Humans decide.
+```
+
+### 1:50–2:15 — Live Slack context
+
+The video shows CareSignal analyzing recent channel history.
+
+Command shown:
 
 ```text
 /caresignal live
 ```
 
-Show the Care Brief:
+This demonstrates that CareSignal is not limited to static demo data. It can retrieve recent Slack channel context and produce a Care Brief from it.
 
-- overload signal;
-- unresolved blockers;
-- follow-up gap;
-- quiet voice;
-- evidence and next kind action;
-- human-review buttons.
+### 2:15–2:40 — Real-Time Search path
 
-Click:
+The video shows the Real-Time Search workflow through an app mention.
 
-- `Assign follow-up` on the overload or blocker signal;
-- `Needs context` on the quiet voice or follow-up gap.
-
-Say: CareSignal does not decide for the team. It makes support gaps legible and asks humans to choose the next action.
-
-## 1:45–2:20 — Real-Time Search path
-
-Mention CareSignal in the channel:
+Command shown:
 
 ```text
 @CareSignal rts brief
 ```
 
-Explain that this path calls Slack `assistant.search.context` through an app-mention action token. If the sandbox returns no RTS hits, CareSignal reports that honestly and uses channel history as a transparent fallback.
+The output demonstrates the Real-Time Search path through:
 
-## 2:20–2:45 — Architecture
+```text
+assistant.search.context
+```
 
-Show `docs/architecture_diagram.svg`.
+The demo shows retrieved RTS context being transformed into the same Care Brief workflow.
 
-Slack command or mention → context retrieval → CareSignal detector → Block Kit Care Brief → human review actions.
+### 2:40–2:55 — Closing
 
-## 2:45–3:00 — Impact
+The video closes with CareSignal’s main message:
 
-CareSignal is for learning cohorts, volunteer groups, support teams, and online communities where people can disappear in message noise. It helps humans care better without labeling participants.
+```text
+CareSignal: AI that helps humans care better.
+```
+
+## Notes
+
+The architecture diagram is submitted separately as part of the Devpost submission materials.
+
+The video focuses on the app functioning inside Slack rather than presenting the architecture diagram in detail.
+
+## Public video link
+
+```text
+https://youtu.be/Q9j0i6mnlc0
+```
+
