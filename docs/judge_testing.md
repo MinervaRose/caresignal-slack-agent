@@ -3,11 +3,18 @@
 ## Sandbox
 
 CareSignal was developed in a Slack Developer Sandbox.
+CareSignal is a Slack Socket Mode prototype demonstrated in the video. The sandbox remains available for inspection, live command responses require the backend process to be running.
 
 Sandbox URL used during development:
 
 ```text
 https://caresignal-sandbox.enterprise.slack.com
+```
+
+Direct Slack client URL:
+
+```text
+https://app.slack.com/client/E0BB97RGZDJ/C0BB97QF8UU
 ```
 
 Before final submission, invite or grant access to:
