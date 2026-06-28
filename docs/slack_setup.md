@@ -1,4 +1,4 @@
-# Slack Setup for CareSignal v1.0-rc1
+# Slack Setup for CareSignal
 
 ## 1. Create / open the Slack app
 
