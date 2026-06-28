@@ -24,7 +24,7 @@ It helps moderators, mentors, community leads, and support teams notice buried q
 
 ## Demo video
 
-🎬 **Demo video:** `TODO: add YouTube demo link here`
+🎬 **Demo video:** [Watch the CareSignal demo](https://youtu.be/Q9j0i6mnlc0)
 
 The demo shows CareSignal running inside a Slack developer sandbox, including:
 
