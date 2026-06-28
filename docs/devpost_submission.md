@@ -6,7 +6,7 @@ CareSignal
 
 ## Elevator pitch
 
-CareSignal turns noisy Slack conversations into human-reviewable care briefs, helping teams notice who still needs help — without labeling participants.
+CareSignal turns busy Slack conversations into care briefs, helping moderators spot unanswered questions, unresolved blockers, and overlooked members.
 
 ## Track
 
